@@ -1,7 +1,7 @@
 
 # Part: B – System Architecture
 ## Overview
-For an existing e-commerce application, I've come up with a plan to make it better. The new design is scalable, cost effective, performs well, and has built-in logging and monitoring. This means we can quickly spot and fix any issues, thanks to better management tools.
+For an existing e-commerce application, I've come up with a plan to make it better. The new design is scalable, cost effective, performs well, and has built-in logging and monitoring. This means we can quickly spot and fix any issues.
 ## Current Architecture
 The current architecture involves users accessing the application by hitting the DNS, which resolves to the IP address of the web server. The web server, in turn, is connected to a database and an object storage bucket.
 ![Current Architecture](https://github.com/Zunaied/Devops-task-v2/blob/main/Existing%20Architecture.png)
