@@ -20,8 +20,7 @@ In this solution, various components are used to improve performance, reduce cos
 
 - Servers are configured with **auto scaling** to dynamically adjust to varying traffic. It scales up during peak hours to handle high demand and scales down during lighter traffic periods, ensuring optimal resource utilization.
 
-- The application uses a database with a **master write instance** for writing and **Read Replicas** for reading data. Utilizing a single availability zone (AZ) for cost-effectiveness, read replicas are employed, benefiting from their no-cost feature in a single AZ Read Replica database setup. It quantity limitation for read replica.
-
+- The application uses a database with a **master write instance** for writing and **Read Replicas** for reading data. Utilizing a single availability zone (AZ) for cost-effectiveness. Read Replica database can also be setup in cross region.
 - To manage various read and write APIs, along with background jobs, we implemented an efficient solution using **API Gateway** as an event trigger for **Lambda Functions**. This serverless approach ensures minimal operational costs.
  
 - To handle external queries for product lists, we integrated **API Gateway** and **Lambda Function**. The external queries are efficiently processed from the S3 bucket.
